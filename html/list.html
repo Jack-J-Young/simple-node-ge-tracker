@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <title>Hello, world!</title>
+        <meta name="viewport" content="width=device-width,initial-scale=1" />
+        <meta name="description" content="" />
+    </head>
+
+    <body>
+        <h1>Hello, world!</h1>
+        <table>
+            <tr>
+                <th>ID</th>
+                <th>Low</th>
+                <th>High</th>
+            </tr>
+            {{#each data}}
+                <tr>
+                    <td>{{this.mappings.name}}</td>
+                    <td>{{this.latest.low}}</td>
+                    <td>{{this.latest.high}}</td>
+                </tr>
+            {{/each}}
+        </table>
+    </body>
+
+</html>
